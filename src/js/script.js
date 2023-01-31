@@ -18,22 +18,40 @@ console.log(result);
 
 /* Друге */
 
-function gcd(a, b) {
-    while(a != b){
-        if(a > b) {
-            a -= b;
-        }
-        else {
-            b -= a;
-        } 
-    }
-    return a;
+let hcf;
+const number1 = prompt('Введіть перше число!: ');
+const number2 = prompt('Введіть друге число!: ');
+
+for (let i = 1; i <= number1 && i <= number2; i++) {
+
+    if(number1 < 0 || number2 < 0){
+        alert('Ви ввели невірне число!!!')
+    } ( number1 % i == 0 && number2 % i == 0) {
+        hcf = i;
+    } 
 }
-const x = prompt('1')
-const y = prompt('2')
-var result = gcd(x, y);
-console.log(result);
-  
+
+alert('Ваш найбільший спільний дільник: ' + hcf);
+
+// const USER_NUMBER_ONE = prompt('Введіть перше число!');
+// const USER_NUMBER_TWO = prompt('Введіть друге число!');
+// function NCD(a, b) {
+//     while (a != b) {
+//         if (a > b) {
+//             a -= b;
+//         }
+
+//         else {
+//             b -= a;            
+//         }
+//         return a;
+//     }
+    
+// }
+
+// let result = NCD(USER_NUMBER_ONE, USER_NUMBER_TWO);
+// alert('Ваш найбільший спільний дільник: ' + result);
+
 
 
 
