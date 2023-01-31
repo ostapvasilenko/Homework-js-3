@@ -18,6 +18,24 @@ console.log(result);
 
 /* Друге */
 
+function gcd(a, b) {
+    while(a != b){
+        if(a > b) {
+            a -= b;
+        }
+        else {
+            b -= a;
+        } 
+    }
+    return a;
+}
+const x = prompt('1')
+const y = prompt('2')
+var result = gcd(x, y);
+console.log(result);
+  
+
+
 
 
 
