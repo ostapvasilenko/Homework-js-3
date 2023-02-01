@@ -62,11 +62,25 @@ alert('Кількість цифр у заданому вами числі = ' +
 /* Пяте */
 
 let myArray = [];
-for(let i = 1; i <= 10; i++){
+let counter = [0, 0, 0];
+
+for (let i = 1; i <= 4; i++) {
     let number = Number(prompt('Введіть число № ' + i))
-    myArray.push(number)
+    myArray.push(number);
 }
+myArray.forEach(function (elem) {
+    if (elem < 0)
+    counter[1]++;
+    else if (elem > 0)
+    counter[2]++;
+    else
+    counter[0]++;
+});
 console.log(myArray);
+console.log(`У числі яке ви ввели є ${counter[2]} додатніх чисел`);
+console.log(`У числі яке ви ввели є ${counter[1]} від’ємних чисел`);
+console.log(`У числі яке ви ввели є ${counter[0]} нулів`);
+
 
 
 
