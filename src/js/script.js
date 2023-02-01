@@ -94,31 +94,33 @@ console.log(`У числі яке ви ввели є ${counterPar} парних 
 console.log(`У числі яке ви ввели є ${counterNepar} непарних чисел`);*/
 
 /* Шосте */
+/*
+while (true) {
+    let number1 = Number(prompt('Введіть перше число'))
+    let number2 = Number(prompt('Введіть друге число'))
+    let calculation = prompt('Виберіть операцію яку хочуте зробити з числами (додати, відняти, помножити чи поділити)')
+    switch (calculation) {
+        case ('+'):
+            alert(number1 + number2)
+            break;
+        case ('-'):
+            alert(number1 - number2)
+            break;
+        case ('*'):
+            alert(number1 * number2)
+            break;
+        case ('/'):
+            alert(number1 / number2)
+            break;
+        default:
+            alert('Ви вибрали невірну операцію!!!')
 
-let number1 = Number(prompt('number1'))
-let number2 = Number(prompt('number2'))
-let calculation = prompt('Виберіть операцію яку хочуте зробити з числами (додати, відняти, помножити чи поділити)')
-switch (calculation) {
-    case('+'):
-    alert(number1 + number2)
-    break;
-    case('-'):
-    alert(number1 - number2)
-    break;
-    case('*'):
-    alert(number1 * number2)
-    break;
-    case('/'):
-    alert(number1 / number2)
-    break;
-    default:
-    alert('Ви вибрали невірну операцію!!!')
-    
-}
-let operation = prompt('Бажаєте розв’язати ще один приклад?\n 1 - ТАК \n 2 - НІ')
-while
-
-
+    }
+    let operation = prompt('Бажаєте розв’язати ще один приклад?\n 1 - ТАК \n 2 - НІ');
+    if (operation == 2) {
+        break;
+    }
+}*/
 
 
 
