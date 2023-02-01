@@ -61,25 +61,41 @@ alert('Кількість цифр у заданому вами числі = ' +
 
 /* Пяте */
 
-let myArray = [];
+/*let myArray = [];
 let counter = [0, 0, 0];
+let counterPar = 0;
+let counterNepar = 0;
 
-for (let i = 1; i <= 4; i++) {
+for (let i = 1; i <= 10; i++) {
     let number = Number(prompt('Введіть число № ' + i))
     myArray.push(number);
 }
 myArray.forEach(function (elem) {
     if (elem < 0)
-    counter[1]++;
+        counter[1]++;
     else if (elem > 0)
-    counter[2]++;
+        counter[2]++;
     else
-    counter[0]++;
+        counter[0]++;
 });
+myArray.forEach(function (elem) {
+    if (elem % 2 === 0) {
+        counterPar++
+    } else if (elem % 2 !== 0) {
+        counterNepar++
+    }
+})
+
 console.log(myArray);
 console.log(`У числі яке ви ввели є ${counter[2]} додатніх чисел`);
 console.log(`У числі яке ви ввели є ${counter[1]} від’ємних чисел`);
 console.log(`У числі яке ви ввели є ${counter[0]} нулів`);
+console.log(`У числі яке ви ввели є ${counterPar} парних чисел`);
+console.log(`У числі яке ви ввели є ${counterNepar} непарних чисел`);*/
+
+/* Шосте */
+
+
 
 
 
