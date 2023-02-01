@@ -18,39 +18,40 @@ console.log(result);
 
 /* Друге */
 
-let hcf;
-const number1 = prompt('Введіть перше число!: ');
-const number2 = prompt('Введіть друге число!: ');
+/*let hcf;
+const number1 = Number(prompt('Введіть перше число!: '));
+const number2 = Number(prompt('Введіть друге число!: '));
 
 for (let i = 1; i <= number1 && i <= number2; i++) {
 
-    if(number1 < 0 || number2 < 0){
+    if(number1 < 0 && number2 < 0){
         alert('Ви ввели невірне число!!!')
-    } ( number1 % i == 0 && number2 % i == 0) {
+    } else if ( number1 % i == 0 && number2 % i == 0) {
         hcf = i;
     } 
 }
 
-alert('Ваш найбільший спільний дільник: ' + hcf);
+alert('Ваш найбільший спільний дільник: ' + hcf);*/
 
-// const USER_NUMBER_ONE = prompt('Введіть перше число!');
-// const USER_NUMBER_TWO = prompt('Введіть друге число!');
-// function NCD(a, b) {
-//     while (a != b) {
-//         if (a > b) {
-//             a -= b;
-//         }
+/* Третє */
 
-//         else {
-//             b -= a;            
-//         }
-//         return a;
-//     }
-    
-// }
+/*const num = Number(prompt('Введіть будь яке додатнє число!: '));
 
-// let result = NCD(USER_NUMBER_ONE, USER_NUMBER_TWO);
-// alert('Ваш найбільший спільний дільник: ' + result);
+if (num < 0) {
+    console.log('Ви ввели від’ємне число!!!');
+} else {
+    console.log(`Дільниками введеного вами числа (${num}) є:`);
+    for (let i = 1; i <= num; i++) {
+        if (num % i == 0) {
+            console.log(i);
+        }
+    }
+}*/
+
+/* Четверте */
+
+
+
 
 
 
