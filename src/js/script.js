@@ -61,9 +61,12 @@ alert('Кількість цифр у заданому вами числі = ' +
 
 /* Пяте */
 
-
-
-
+let myArray = [];
+for(let i = 1; i <= 10; i++){
+    let number = Number(prompt('Введіть число № ' + i))
+    myArray.push(number)
+}
+console.log(myArray);
 
 
 
