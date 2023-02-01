@@ -35,20 +35,34 @@ alert('Ваш найбільший спільний дільник: ' + hcf);*/
 
 /* Третє */
 
-/*const num = Number(prompt('Введіть будь яке додатнє число!: '));
+/*const NUM = Number(prompt('Введіть будь яке додатнє число!: '));
 
-if (num < 0) {
+if (NUM < 0) {
     console.log('Ви ввели від’ємне число!!!');
 } else {
-    console.log(`Дільниками введеного вами числа (${num}) є:`);
-    for (let i = 1; i <= num; i++) {
-        if (num % i == 0) {
+    console.log(`Дільниками введеного вами числа (${NUM}) є:`);
+    for (let i = 1; i <= NUM; i++) {
+        if (NUM % i == 0) {
             console.log(i);
         }
     }
 }*/
 
 /* Четверте */
+
+/*const NUM = Number(prompt('Введіть будь яке число!'));
+const digits = (NUM, count = 0) => {
+    if (NUM) {
+        return digits(Math.floor(NUM / 10), ++count);
+    };
+    return count;
+};
+alert('Кількість цифр у заданому вами числі = ' + digits(NUM));*/
+
+/* Пяте */
+
+
+
 
 
 
