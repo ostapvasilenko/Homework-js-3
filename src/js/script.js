@@ -217,6 +217,8 @@ if (userNumber < 0) {
   window.onload = multiply();*/
 
 
+/* Десяте */
 
+const secretNumber = Number(prompt('Введіть будь яке загадане вами число від 0 до 100'))
 
 
