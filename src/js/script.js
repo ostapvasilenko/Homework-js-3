@@ -126,7 +126,7 @@ while (true) {
 
 /* Сьоме */
 
-let userNumber = prompt('Введіть будь яке число!')
+/*let userNumber = prompt('Введіть будь яке число!')
 let deposition = prompt('Введіть на скільки цифр ви хочете змістити число (не більше 5!)')
 let array = Array.from(userNumber.toString(), Number)
 let newArray = []
@@ -164,6 +164,10 @@ if (userNumber < 0) {
     }
 
 }
+*/
+
+/* Восьме */
+
 
 
 
