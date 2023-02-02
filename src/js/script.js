@@ -130,34 +130,39 @@ let userNumber = prompt('Введіть будь яке число!')
 let deposition = prompt('Введіть на скільки цифр ви хочете змістити число (не більше 5!)')
 let array = Array.from(userNumber.toString(), Number)
 let newArray = []
-switch (deposition) {
-    case ('1'):
-        array.push(array[0]) 
-        array.splice(0 , 1)
-        console.log(array)
-        break;
-    case ('2'):
-        array.push(array[0], array[1]) 
-        array.splice(0 , 2)
-        console.log(array)
-        break;
-    case ('3'):
-        array.push(array[0], array[1], array[2]) 
-        array.splice(0 , 3)
-        console.log(array)
-        break;
-    case ('4'):
-        array.push(array[0], array[1], array[2], array[3]) 
-        array.splice(0 , 4)
-        console.log(array)
-        break;
-    case ('5'):
-        array.push(array[0], array[1], array[2], array[3], array[4]) 
-        array.splice(0 , 5)
-        console.log(array)
-        break;
-    default:
-        alert('Ви вибрали невірну цифру!!!')
+if (userNumber < 0) {
+    alert('Ви ввели від’ємне число!!!')
+} else {
+    switch (deposition) {
+        case ('1'):
+            array.push(array[0])
+            array.splice(0, 1)
+            console.log(array)
+            break;
+        case ('2'):
+            array.push(array[0], array[1])
+            array.splice(0, 2)
+            console.log(array)
+            break;
+        case ('3'):
+            array.push(array[0], array[1], array[2])
+            array.splice(0, 3)
+            console.log(array)
+            break;
+        case ('4'):
+            array.push(array[0], array[1], array[2], array[3])
+            array.splice(0, 4)
+            console.log(array)
+            break;
+        case ('5'):
+            array.push(array[0], array[1], array[2], array[3], array[4])
+            array.splice(0, 5)
+            console.log(array)
+            break;
+        default:
+            alert('Ви вибрали невірну цифру!!!')
+    }
+
 }
 
 
