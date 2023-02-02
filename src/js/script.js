@@ -166,7 +166,19 @@ if (userNumber < 0) {
 }
 */
 
-/* Восьме */
+/* Дев’яте */
+
+/*function multiply() {
+    for (let i = 2; i <= 9; i++) {
+      let val = '';
+      for (let j = 1; j <= 10; j++) {
+        val += `${i} * ${j} = ${i * j}; `;
+      }
+      console.log(val);
+    }
+  }
+
+  window.onload = multiply();*/
 
 
 
