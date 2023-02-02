@@ -166,6 +166,42 @@ if (userNumber < 0) {
 }
 */
 
+/* Восьме */
+
+/*while (true) {
+    let days = ['Понеділок', 'Вівторок', 'Середа', 'Четвер', 'П’ятниця', 'Субота', 'Неділя']
+    let day = Number(prompt('Введіть день тижня цифрою: \n 1 - Понеділок \n 2 - Вівторок\n 3 - Середа\n 4 - Четвер\n 5 - П’ятниця\n 6 - Субота\n 7 - Неділя'))
+    switch (day) {
+        case (1):
+            alert(`Наступний день тижня це: ${days[1]} `)
+            break;
+        case (2):
+            alert(`Наступний день тижня це: ${days[2]} `)
+            break;
+        case (3):
+            alert(`Наступний день тижня це: ${days[3]} `)
+            break;
+        case (4):
+            alert(`Наступний день тижня це: ${days[4]} `)
+            break;
+        case (5):
+            alert(`Наступний день тижня це: ${days[5]} `)
+            break;
+        case (6):
+            alert(`Наступний день тижня це: ${days[6]} `)
+            break;
+        case (7):
+            alert(`Наступний день тижня це: ${days[0]} `)
+            break;
+        default:
+            alert('Ви ввели невірну цифру!!!')
+    }
+    let operation = prompt('Бажаєте ще побачити назву наступного дня тижня?\n 1 - ТАК \n 2 - НІ');
+    if (operation == 2) {
+        break;
+    }
+}*/
+
 /* Дев’яте */
 
 /*function multiply() {
@@ -179,16 +215,6 @@ if (userNumber < 0) {
   }
 
   window.onload = multiply();*/
-
-
-
-
-
-
-
-
-
-
 
 
 
