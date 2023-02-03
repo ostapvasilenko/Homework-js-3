@@ -218,7 +218,24 @@ if (userNumber < 0) {
 
 
 /* Десяте */
+/*let n = 100;
+t = n / 2
+while(true){
+    
+    let response = Number(prompt(`Виберіть:\n 1. Ваше число > ${t}\n 2. Ваше число: < ${t} \n 3.Ваше число  == ${t}?`))
+    switch (response) {
+        case 1:
+            t = t + (t / 2) 
+        break;
+        case 2:
+            t = t / 2
+        break;
+        case 3:
+           continue;
+        break;
+    } 
+    console.log("t: " + t)
+}*/
 
-const secretNumber = Number(prompt('Введіть будь яке загадане вами число від 0 до 100'))
 
-
+ 
