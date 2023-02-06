@@ -35,14 +35,14 @@ alert('Ваш найбільший спільний дільник: ' + hcf);
 
 /* Третє */
 
-const NUM = Number(prompt('Введіть будь яке додатнє число!: '));
+const NUMBER = Number(prompt('Введіть будь яке додатнє число!: '));
 
-if (NUM < 0) {
+if (NUMBER < 0) {
     console.log('Ви ввели від’ємне число!!!');
 } else {
-    console.log(`Дільниками введеного вами числа (${NUM}) є:`);
-    for (let i = 1; i <= NUM; i++) {
-        if (NUM % i == 0) {
+    console.log(`Дільниками введеного вами числа (${NUMBER}) є:`);
+    for (let i = 1; i <= NUMBER; i++) {
+        if (NUMBER % i == 0) {
             console.log(i);
         }
     }
@@ -50,14 +50,14 @@ if (NUM < 0) {
 
 /* Четверте */
 
-const NUMBER = Number(prompt('Введіть будь яке число!'));
-const digits = (NUMBER, count = 0) => {
-    if (NUMBER) {
-        return digits(Math.floor(NUMBER / 10), ++count);
+const NUM = Number(prompt('Введіть будь яке число!'));
+const digits = (NUM, count = 0) => {
+    if (NUM) {
+        return digits(Math.floor(NUM / 10), ++count);
     };
     return count;
 };
-alert('Кількість цифр у заданому вами числі = ' + digits(NUMBER));
+alert('Кількість цифр у заданому вами числі = ' + digits(NUM));
 
 /* Пяте */
 
@@ -86,7 +86,7 @@ userArray.forEach(function (elem) {
     }
 })
 
-console.log( userArray);
+console.log(myArray);
 console.log(`У числі яке ви ввели є ${counter[2]} додатніх чисел`);
 console.log(`У числі яке ви ввели є ${counter[1]} від’ємних чисел`);
 console.log(`У числі яке ви ввели є ${counter[0]} нулів`);
@@ -125,11 +125,11 @@ while (true) {
 
 /* Сьоме */
 
-let userNumber = prompt('Введіть будь яке число!')
+let userNumbers = prompt('Введіть будь яке число!')
 let deposition = prompt('Введіть на скільки цифр ви хочете змістити число (не більше 5!)')
-let array = Array.from(userNumber.toString(), Number)
+let array = Array.from(userNumbers.toString(), Number)
 let newArray = []
-if (userNumber < 0) {
+if (userNumbers < 0) {
     alert('Ви ввели від’ємне число!!!')
 } else {
     switch (deposition) {
@@ -222,17 +222,17 @@ function multiply() {
 let userNumberMin = 0;
 let userNumberMax = 100;
 let userResult = Math.floor((userNumberMin + userNumberMax) / 2);
-let userNumbers;
+let userNumber;
 
 alert("Загадайте число від 0 до 100");
 
 while (true) {
-    userNumbers = prompt(`Введіть знак ">" якщо ваше число більше від ${userResult}, або знак "<" якщо ваше число менше від ${userResult}, або ж знак "=" якщо ваше число дорівнює ${userResult}`);
-    if (userNumbers == '>') {
+    userNumber = prompt(`Введіть знак ">" якщо ваше число більше від ${userResult}, або знак "<" якщо ваше число менше від ${userResult}, або ж знак "=" якщо ваше число дорівнює ${userResult}`);
+    if (userNumber == '>') {
         userNumberMin = userResult + 1;
-    } else if (userNumbers == '<') {
+    } else if (userNumber == '<') {
         userNumberMax = userResult - 1;
-    } else if (userNumbers == '=') {
+    } else if (userNumber == '=') {
         alert(`Ваше загадане число: ${userResult}`);
         break;
     }
