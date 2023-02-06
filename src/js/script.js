@@ -1,6 +1,6 @@
 /* Перше */
 
-/*const USER_NUMBER_ONE = Number(prompt('Введіть будь яке перше число діапазону!'));
+const USER_NUMBER_ONE = Number(prompt('Введіть будь яке перше число діапазону!'));
 const USER_NUMBER_TWO = Number(prompt('Введіть будь яке друге число діапазону!'));
 let myArray = [];
 let sum = 0;
@@ -14,11 +14,11 @@ let result = myArray.reduce((a, b) => {
 });
 
 console.log(result);
-*/
+
 
 /* Друге */
 
-/*let hcf;
+let hcf;
 const number1 = Number(prompt('Введіть перше число!: '));
 const number2 = Number(prompt('Введіть друге число!: '));
 
@@ -31,11 +31,11 @@ for (let i = 1; i <= number1 && i <= number2; i++) {
     } 
 }
 
-alert('Ваш найбільший спільний дільник: ' + hcf);*/
+alert('Ваш найбільший спільний дільник: ' + hcf);
 
 /* Третє */
 
-/*const NUM = Number(prompt('Введіть будь яке додатнє число!: '));
+const NUM = Number(prompt('Введіть будь яке додатнє число!: '));
 
 if (NUM < 0) {
     console.log('Ви ввели від’ємне число!!!');
@@ -46,22 +46,22 @@ if (NUM < 0) {
             console.log(i);
         }
     }
-}*/
+}
 
 /* Четверте */
 
-/*const NUM = Number(prompt('Введіть будь яке число!'));
+const NUM = Number(prompt('Введіть будь яке число!'));
 const digits = (NUM, count = 0) => {
     if (NUM) {
         return digits(Math.floor(NUM / 10), ++count);
     };
     return count;
 };
-alert('Кількість цифр у заданому вами числі = ' + digits(NUM));*/
+alert('Кількість цифр у заданому вами числі = ' + digits(NUM));
 
 /* Пяте */
 
-/*let myArray = [];
+let myArray = [];
 let counter = [0, 0, 0];
 let counterPar = 0;
 let counterNepar = 0;
@@ -91,11 +91,10 @@ console.log(`У числі яке ви ввели є ${counter[2]} додатн�
 console.log(`У числі яке ви ввели є ${counter[1]} від’ємних чисел`);
 console.log(`У числі яке ви ввели є ${counter[0]} нулів`);
 console.log(`У числі яке ви ввели є ${counterPar} парних чисел`);
-console.log(`У числі яке ви ввели є ${counterNepar} непарних чисел`);*/
+console.log(`У числі яке ви ввели є ${counterNepar} непарних чисел`);
 
 /* Шосте */
 
-/*
 while (true) {
     let number1 = Number(prompt('Введіть перше число'))
     let number2 = Number(prompt('Введіть друге число'))
@@ -121,12 +120,12 @@ while (true) {
     if (operation == 2) {
         break;
     }
-}*/
+}
 
 
 /* Сьоме */
 
-/*let userNumber = prompt('Введіть будь яке число!')
+let userNumber = prompt('Введіть будь яке число!')
 let deposition = prompt('Введіть на скільки цифр ви хочете змістити число (не більше 5!)')
 let array = Array.from(userNumber.toString(), Number)
 let newArray = []
@@ -164,11 +163,11 @@ if (userNumber < 0) {
     }
 
 }
-*/
+
 
 /* Восьме */
 
-/*while (true) {
+while (true) {
     let days = ['Понеділок', 'Вівторок', 'Середа', 'Четвер', 'П’ятниця', 'Субота', 'Неділя']
     let day = Number(prompt('Введіть день тижня цифрою: \n 1 - Понеділок \n 2 - Вівторок\n 3 - Середа\n 4 - Четвер\n 5 - П’ятниця\n 6 - Субота\n 7 - Неділя'))
     switch (day) {
@@ -200,11 +199,11 @@ if (userNumber < 0) {
     if (operation == 2) {
         break;
     }
-}*/
+}
 
 /* Дев’яте */
 
-/*function multiply() {
+function multiply() {
     for (let i = 2; i <= 9; i++) {
       let val = '';
       for (let j = 1; j <= 10; j++) {
@@ -214,28 +213,28 @@ if (userNumber < 0) {
     }
   }
 
-  window.onload = multiply();*/
+  window.onload = multiply();
 
 
 /* Десяте */
-/*let n = 100;
-t = n / 2
-while(true){
-    
-    let response = Number(prompt(`Виберіть:\n 1. Ваше число > ${t}\n 2. Ваше число: < ${t} \n 3.Ваше число  == ${t}?`))
-    switch (response) {
-        case 1:
-            t = t + (t / 2) 
-        break;
-        case 2:
-            t = t / 2
-        break;
-        case 3:
-           continue;
-        break;
-    } 
-    console.log("t: " + t)
-}*/
 
 
- 
+let userNumberMin = 0;
+let userNumberMax = 100;
+let userResult = Math.floor((userNumberMin + userNumberMax) / 2);
+let userNumbers;
+
+alert("Загадайте число від 0 до 100");
+
+while (true) {
+    userNumbers = prompt(`Введіть знак ">" якщо ваше число більше від ${userResult}, або знак "<" якщо ваше число менше від ${userResult}, або ж знак "=" якщо ваше число дорівнює ${userResult}`);
+    if (userNumbers == '>') {
+        userNumberMin = userResult + 1;
+    } else if (userNumbers == '<') {
+        userNumberMax = userResult - 1;
+    } else if (userNumbers == '=') {
+        alert(`Ваше загадане число: ${userResult}`);
+        break;
+    }
+    userResult = Math.floor((userNumberMin + userNumberMax) / 2);
+}
