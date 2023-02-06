@@ -50,27 +50,27 @@ if (NUM < 0) {
 
 /* Четверте */
 
-const NUM = Number(prompt('Введіть будь яке число!'));
-const digits = (NUM, count = 0) => {
-    if (NUM) {
-        return digits(Math.floor(NUM / 10), ++count);
+const NUMBER = Number(prompt('Введіть будь яке число!'));
+const digits = (NUMBER, count = 0) => {
+    if (NUMBER) {
+        return digits(Math.floor(NUMBER / 10), ++count);
     };
     return count;
 };
-alert('Кількість цифр у заданому вами числі = ' + digits(NUM));
+alert('Кількість цифр у заданому вами числі = ' + digits(NUMBER));
 
 /* Пяте */
 
-let myArray = [];
+let userArray = [];
 let counter = [0, 0, 0];
 let counterPar = 0;
 let counterNepar = 0;
 
 for (let i = 1; i <= 10; i++) {
     let number = Number(prompt('Введіть число № ' + i))
-    myArray.push(number);
+    userArray.push(number);
 }
-myArray.forEach(function (elem) {
+userArray.forEach(function (elem) {
     if (elem < 0)
         counter[1]++;
     else if (elem > 0)
@@ -78,7 +78,7 @@ myArray.forEach(function (elem) {
     else
         counter[0]++;
 });
-myArray.forEach(function (elem) {
+userArray.forEach(function (elem) {
     if (elem % 2 === 0) {
         counterPar++
     } else if (elem % 2 !== 0) {
@@ -86,7 +86,7 @@ myArray.forEach(function (elem) {
     }
 })
 
-console.log(myArray);
+console.log( userArray);
 console.log(`У числі яке ви ввели є ${counter[2]} додатніх чисел`);
 console.log(`У числі яке ви ввели є ${counter[1]} від’ємних чисел`);
 console.log(`У числі яке ви ввели є ${counter[0]} нулів`);
